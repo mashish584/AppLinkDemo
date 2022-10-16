@@ -217,6 +217,12 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            storeFile file('applinkdemo.keystore')
+            storePassword '123456'
+            keyAlias 'applink'
+            keyPassword '123456'
+        }
     }
     buildTypes {
         debug {
